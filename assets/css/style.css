@@ -283,3 +283,9 @@ h1 {
     border-color: var(--text-muted);
     color: var(--text-main);
 }
+
+/* Select specific styles */
+select.form-input option {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+}
