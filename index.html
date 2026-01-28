@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Database Access | MSP</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Sample Database</h1>
+                <div class="subtitle">Centralized Material Sample Platform</div>
+            </div>
+            <div class="user-profile">
+                <!-- User profile placeholder -->
+                <button class="btn btn-secondary">
+                    <i class="fa-solid fa-user-astronaut"></i> MSP User
+                </button>
+            </div>
+        </header>
+
+        <div class="controls glass glass-panel">
+            <div class="search-box">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Search by ID, Material, or Sector...">
+            </div>
+            <button id="addBtn" class="btn btn-primary">
+                <i class="fa-solid fa-plus"></i> New Record
+            </button>
+        </div>
+
+        <div id="gridContainer" class="data-grid">
+            <!-- Cards will be injected here via JS -->
+        </div>
+    </div>
+
+    <!-- Modal for Adding/Editing -->
+    <div id="entryModal" class="modal-overlay">
+        <div class="modal glass">
+            <h2 id="modalTitle" style="margin-bottom: 20px;">Add New Sample</h2>
+            <form id="entryForm">
+                <div id="formFields"></div>
+                <div class="btn-group">
+                    <button type="button" id="cancelBtn" class="btn btn-secondary">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Record</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
