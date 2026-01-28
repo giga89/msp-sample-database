@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Database Access | MSP</title>
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
-    
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -24,7 +26,9 @@
                 <div class="subtitle">Centralized Material Sample Platform</div>
             </div>
             <div class="user-profile">
-                <!-- User profile placeholder -->
+                <a href="create_user.html" class="btn btn-secondary" title="Manage Users">
+                    <i class="fa-solid fa-users-gear"></i>
+                </a>
                 <button class="btn btn-secondary">
                     <i class="fa-solid fa-user-astronaut"></i> MSP User
                 </button>
@@ -34,7 +38,8 @@
         <div class="controls glass glass-panel">
             <div class="search-box">
                 <i class="fa-solid fa-search search-icon"></i>
-                <input type="text" id="searchInput" class="search-input" placeholder="Search by ID, Material, or Sector...">
+                <input type="text" id="searchInput" class="search-input"
+                    placeholder="Search by ID, Material, or Sector...">
             </div>
             <button id="addBtn" class="btn btn-primary">
                 <i class="fa-solid fa-plus"></i> New Record
@@ -62,4 +67,5 @@
 
     <script type="module" src="assets/js/app.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User | MSP</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Sample Database</h1>
+                <div class="subtitle">User Management Portal</div>
+            </div>
+            <div class="user-profile">
+                <a href="index.html" class="btn btn-secondary">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Dashboard
+                </a>
+            </div>
+        </header>
+
+        <div class="glass glass-panel" style="max-width: 600px; margin: 0 auto;">
+            <h2 style="margin-bottom: 24px; text-align: center;">Create New User</h2>
+            <form id="createUserForm">
+                <div class="form-group">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" id="username" class="form-input" placeholder="jdoe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="role" class="form-label">Role</label>
+                    <select id="role" class="form-input">
+                        <option value="user">Standard User</option>
+                        <option value="admin">Administrator</option>
+                        <option value="viewer">Viewer</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Temporary Password</label>
+                    <input type="password" id="password" class="form-input" required>
+                </div>
+
+                <div class="btn-group" style="margin-top: 32px; justify-content: center;">
+                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                        <i class="fa-solid fa-user-plus"></i> Create User
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification (Hidden by default) -->
+    <div id="toast" class="glass"
+        style="position: fixed; bottom: 20px; right: 20px; padding: 16px 24px; display: none; align-items: center; gap: 12px; border-left: 4px solid var(--success);">
+        <i class="fa-solid fa-check-circle" style="color: var(--success);"></i>
+        <span>User created successfully!</span>
+    </div>
+
+    <script type="module" src="assets/js/user_app.js"></script>
+</body>
+
+</html>
